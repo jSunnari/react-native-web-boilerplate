@@ -3,9 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start:native": "node node_modules/react-native/local-cli/cli.js start",
+    "start:web": "node web/scripts/start.js",
+    "test:native": "jest --config \"./config/native.jest.config.js\"",
+    "test:web": "node web/scripts/test.js --config \"./config/web.jest.config.js\"",
+    "coverage:web": "node scripts/test.js --coverage --config \"./config/web.jest.config.js\"",
+    "coverage:native": "jest --config \"./config/native.jest.config.js\" --coverage",
+    "build:web": "node web/scripts/build.js"
   },
   "dependencies": {
     "@svgr/webpack": "4.1.0",
