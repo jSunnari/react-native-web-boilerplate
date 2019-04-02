@@ -54,3 +54,16 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
+
+# dependencies
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
