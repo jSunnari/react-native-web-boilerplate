@@ -1,8 +1,8 @@
 module.exports = {
     rootDir: "../",
-    coverageDirectory: 'coverageWeb',
+    coverageDirectory: 'coverage-web',
     collectCoverageFrom: [
-      "src/**/*.{js,jsx,ts,tsx}",
+      "src/**/*.{web.js,web.jsx,web.ts,web.tsx}",
       "!src/**/*.d.ts"
     ],
     resolver: "jest-pnp-resolver",
@@ -10,8 +10,8 @@ module.exports = {
       "react-app-polyfill/jsdom"
     ],
     testMatch: [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}"
+      "<rootDir>__tests__/**/*.{web.js,web.jsx,web.ts,web.tsx}",
+		  "<rootDir>/__tests__/**/?(*.)(spec|test).{web.js,web.jsx,web.ts,web.tsx}"
     ],
     testEnvironment: "jsdom",
     testURL: "http://localhost",

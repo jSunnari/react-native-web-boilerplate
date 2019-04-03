@@ -61,6 +61,8 @@ buck-out/
 
 # testing
 /coverage
+/coverage-native
+/coverage-web
 
 # misc
 .env.local

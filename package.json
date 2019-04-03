@@ -5,11 +5,11 @@
   "scripts": {
     "lint": "eslint .",
     "start:native": "node node_modules/react-native/local-cli/cli.js start",
-    "start:web": "node web/scripts/start.js",
-    "test:native": "jest --config \"./config/native.jest.config.js\"",
-    "test:web": "node web/scripts/test.js --config \"./config/web.jest.config.js\"",
+    "start:web": "node scripts/start.js",
+    "test:web": "node scripts/test.js --config \"./config/web.jest.config.js\"",
+    "test:native": "node scripts/test.js --config \"./config/native.jest.config.js\"",
     "coverage:web": "node scripts/test.js --coverage --config \"./config/web.jest.config.js\"",
-    "coverage:native": "jest --config \"./config/native.jest.config.js\" --coverage",
+    "coverage:native": "node scripts/test.js --coverage --config \"./config/native.jest.config.js\"",
     "build:web": "node web/scripts/build.js"
   },
   "dependencies": {
@@ -80,9 +80,6 @@
     "presets": [
       "react-app"
     ]
-  },
-  "jest": {
-    "preset": "react-native"
   },
   "eslintConfig": {
     "extends": "react-app"
