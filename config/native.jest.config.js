@@ -7,8 +7,8 @@ module.exports = {
     '!src/**/*.d.ts'
 	],
 	testMatch: [
-		'<rootDir>/__tests__/**/*.{js,jsx,ts,tsx}',
-		'<rootDir>/__tests__//**/?(*.)(spec|test).{js,jsx,ts,tsx}'
+		'<rootDir>/__tests__/native/**/*.{js,jsx,ts,tsx}',
+		'<rootDir>/__tests__/native//**/?(*.)(spec|test).{js,jsx,ts,tsx}'
 	],
 	browser: false,
 	moduleFileExtensions: [
